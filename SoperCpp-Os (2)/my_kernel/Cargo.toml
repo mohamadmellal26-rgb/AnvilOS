@@ -1,0 +1,23 @@
+[package]
+name = "my_kernel"
+version = "0.1.0"
+edition = "2021"
+
+# نحول نوع المخرج إلى مكتبة ثابتة لسهولة الربط مع الأسمبلي
+[lib]
+name = "kernel"
+crate-type = ["staticlib"]
+
+[profile.dev]
+panic = "abort" # إيقاف التعامل مع الاستثناءات المعقدة لعدم وجود نظام تشغيل
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+x86_64 = "0.15.5"
+pc-keyboard = "0.7.0"
+pic8259 = "0.11.0"          # تم التحديث لإصدار يتوافق مع x86_64 0.15
+volatile = "0.4.6"
+lazy_static = { version = "1.5.1", features = ["spin_no_std"] }
+spin = "0.9.9"

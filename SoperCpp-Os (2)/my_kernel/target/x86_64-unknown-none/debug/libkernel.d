@@ -1,0 +1,1 @@
+/home/mohamad/Development/SoperCpp-Os\ (2)/my_kernel/target/x86_64-unknown-none/debug/libkernel.a: /home/mohamad/Development/SoperCpp-Os\ (2)/my_kernel/src/fs.rs /home/mohamad/Development/SoperCpp-Os\ (2)/my_kernel/src/gui.rs /home/mohamad/Development/SoperCpp-Os\ (2)/my_kernel/src/lib.rs /home/mohamad/Development/SoperCpp-Os\ (2)/my_kernel/src/terminal.rs
